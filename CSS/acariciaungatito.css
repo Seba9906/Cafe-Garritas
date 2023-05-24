@@ -1,0 +1,14 @@
+
+@import url(../CSS/nav.css);
+@import url(../CSS/footer.css);
+
+
+
+
+body {
+    background-image: url(../IMAGENES/Logoyfondo/Cafe\ garritas\ fondo_Mesa\ de\ trabajo\ 1.svg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    z-index: 0;
+}
