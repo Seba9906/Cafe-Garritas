@@ -1,0 +1,150 @@
+
+@import url(../CSS/galeria.css);
+@import url(../CSS/nav.css);
+@import url(../CSS/formulario-reservas.css);
+@import url(../CSS/footer.css);
+@import url(../CSS/locales.css);
+
+
+
+body {
+    background-image: url(../IMAGENES/Logoyfondo/Cafe\ garritas\ fondo_Mesa\ de\ trabajo\ 1.svg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+h1 {
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contenedorgrande{ /**contenedor del index**/
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+  
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+/**ESTILO DEL BODY INDEX**/
+.bannertexto {
+    position: relative;
+    overflow: hidden;
+}
+
+.fotoarriba{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.textoarriba{
+    position: absolute; 
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -3%);
+    color: white; 
+    font-size: 80%;
+    text-align: center;
+    font-weight: 900;
+}
+.logoindex {
+    position: absolute;
+    height: 50%;
+    transform: translate(-50%, +10%);
+}
+
+.menu {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.gatitomenu{
+    width: 100%;
+    /**border-radius: 150px;**/
+ }
+
+/*.columna-1 {
+    float: left;
+    width: 50%;
+  }
+  
+.columna-2 {
+    float: right;
+    width: 50%;
+  }*/
+
+.columna-2 p {
+    float: right;
+    /*width: 50% ; */
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180%;
+    text-align: center;
+    font-weight: 100;
+    padding: 25%, 25%, 25%, 25%;
+    
+}
+
+.rescate {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.columna-3 p {
+   /* float: left;
+    width: 50%; */
+    /*overflow: hidden;*/
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180%;
+    text-align: center;
+    font-weight: 100;
+    /*padding-top: 10%;*/
+}
+  
+/*.columna-4 {
+    float: right;
+    width: 50%;
+  }*/
+
+
+.gatitorescatado {
+    width: 100%;
+    /**border-radius: 150px;**/
+}
+
+.locales {
+    padding-top:10px;
+    position: relative;
+}
+
+.imagenabajo{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedortexto p{
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #846745;
+    font-size: 140%;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}

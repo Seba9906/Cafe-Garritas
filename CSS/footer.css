@@ -1,0 +1,112 @@
+
+
+.footer-pie{
+    margin: -1%;
+    margin-top: 7%;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    grid-template-rows: auto;
+    grid-gap: none;
+    
+}
+
+/*botones de redes*/
+
+.main-redes{
+    background: #E6B771;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+    
+    
+}
+
+.main-redes a{
+    background-color: white;
+    color: #E6B771;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}   
+
+.main-redes a:hover{
+    background:#846745;
+    color: white;
+    cursor: pointer;
+    font-size: 60px;
+    transition: .7s ease;
+}
+
+/*datos del cafe*/
+
+.main-datos{
+    width: 100%;
+    background: #AC8A5F;
+    color: antiquewhite;
+    padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-columna{
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.footer-columna i{
+    padding: 5px;
+}
+
+h4{
+    color: #E6B771;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*copy*/
+
+.footer-copy{
+    width: 100%;
+    background-color: #846745;
+    padding: 5px;
+    text-align: center;
+}
+
+/*hacerlo responsivo*/
+
+@media  screen and (max-width: 700px){
+    .footer-columna{
+        width: calc(100% / 1);
+        text-align: center;
+    }
+
+    .footer-columna span{
+        font-size: 20px;
+    }
+      
+}
+
+@media screen and (min-width: 1000px){
+    .footer-copy{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .main-datos{
+        font-size: 23px;
+    }
+    
+}
+    
+
