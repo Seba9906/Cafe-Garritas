@@ -148,3 +148,17 @@ p {
     text-align: center;
     z-index: 1;
 }
+
+#volver-inicio {
+    color: rgb(0, 0, 2);
+    font-family: 'Patrick Hand SC', cursive;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  
+#h2confirmacion{
+    text-align: center;
+}

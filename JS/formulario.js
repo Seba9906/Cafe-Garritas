@@ -6,6 +6,50 @@ const telefono = document.getElementById("telefono");
 const personas = document.getElementById("personas");
 const peticion = document.getElementById("peticion");
 const form = document.getElementById("form");
+const $form = document.querySelector('#form')
+const $buttonMailto = document.querySelector('#trucazo')
+
+$form.addEventListener('submit', HandleSubmit);
+
+function HandleSubmit(event) {
+  event.preventDefault();
+  const form = new FormData(this);
+
+  // Verifica si hay campos requeridos vacíos
+  if (isFormEmpty(form)) {
+    alert('Por favor, complete todos los campos del formulario antes de enviar.');
+    return;
+  }
+
+  let bodyText = `NOMBRE = ${form.get('nombrecompleto')}\n\nCORREO: ${form.get('direcciondecorreo')}\n\nFECHA DE RESERVA: ${form.get('fecha')}\n\nHORA :${form.get('hora')}\n\nTEL :${form.get('telefono')}\n\nPERSONAS :${form.get('personas')}`;
+
+  // Añade la petición solo si no está vacía
+  if (form.get('peticion')) {
+    bodyText += `\n\nPETICION :${form.get('peticion')}`;
+  }
+
+  $buttonMailto.setAttribute('href', `mailto:seba.tr.999@gmail.com?subject=Reserva de ${form.get('nombrecompleto')}&body=${encodeURIComponent(bodyText)}`);
+  $buttonMailto.click();
+
+  alert('¡Gracias! Tu reserva ha sido enviada con éxito.');
+
+  // Clear form fields
+  this.reset();
+}
+
+
+function isFormEmpty(form) {
+  // Verifica si hay campos requeridos vacíos, excepto 'peticion'
+  for (let [key, value] of form.entries()) {
+    if (!value && key !== 'peticion') {
+      return true;
+    }
+  }
+  return false;
+}
+
+
+
 
 form.addEventListener("submit", (e) => {
     let mensajes = [];
@@ -73,6 +117,8 @@ form.addEventListener("submit", (e) => {
 
     if (mensajes.length > 0) {
         e.preventDefault();
+    } else {
+    form.submit();
     }
 });
 
