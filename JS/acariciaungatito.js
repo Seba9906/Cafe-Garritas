@@ -21,6 +21,7 @@ btnCat.addEventListener('click', () => {
             const catImgUrl = data [0].url;
 
             //Agregar la imagen como backgorund al container
-            catImgContainer
+            catImgContainer.style.backgroundImage = `url('${catImgUrl}')`;
         })
+        .catch(error => console.log(error));
 })
