@@ -10,8 +10,8 @@
 
 
 body {
-    
-    background-image: url(../IMAGENES/Logoyfondo/Cafe\ garritas\ fondo_Mesa\ de\ trabajo\ 1.svg);
+    overflow-x: hidden;
+    background-image: url(../IMAGENES/Logoyfondo/Cafe-garritas-fondo-Mesa-de-trabajo-1.svg);
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
@@ -86,9 +86,8 @@ section img {
 .flex-container-info4 {
     display: flex;
     align-items: center;
-    justify-content: right;
     background-image: url("../IMAGENES/adorable-gatito-blanco-negro-pared-monocromatica-detras-ella.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -169,6 +168,7 @@ a {
 }
 @media screen and (max-width: 400px) {
     * {
+        overflow-x: hidden;
         margin-left: 0;
         margin-right: 0;
     }
