@@ -25,32 +25,29 @@
             </div>
         </nav>
 
-        <div class="contenedorgrande">
-            <div id="banner1" class="banner1">
-                <img id="logoinicio" class="logoinicio" src="./IMAGENES/Logoyfondo/Cafe garritas logo blanco-06.svg">
-                <img id="gato1" class="gato1" src="./IMAGENES/dueno-acariciando-adorable-gato.jpg">
-                <div class="bienvenidos">
-                    <h1>Bienvenidos a nuestro Cat Café en Buenos Aires, disfrutarás de un ambiente relajado, rodeado de lindos gatitos rescatados que buscan un hogar amoroso.</h1>
-                </div>
-            </div>
+        <div class="contenedor-padre">
+            <div class="logoBlanco"></div>
+            <div class="Bienvenidos"> <p>Bienvenidos a Garritas! <br> Tu nuevo lugar favorito del mundo</p> </div>
+        </div>    
 
-            <section>
-                <a href="https://drive.google.com/file/d/1ACg2lAIp8RZj_QJq9nRgMlezC_q8UpEC/view?usp=sharing" download target="_blank">
-                    <img id="gato2" class="gato2" src="./IMAGENES/mujer-jugando-gato-callejero.jpg" alt="Descargar Menu">
-                </a>
+        
+
+            <section class="section1">
+               
+                <img id="gato2" class="gato2" src="./IMAGENES/mujer-jugando-gato-callejero.jpg" alt="Descargar Menu">
+               
                 <div class="infoindex">
-                    <p>En nuestro café, no sólo encontrarás bebidas y alimentos deliciosos,
-                        sino que también podrás interactuar con nuestros amigos peludos y 
+                    <p>Hola! somos una cadena de cafeterias donde te encontraras con unas patitas muy tiernas y peludas <i class="fa-solid fa-heart" style="color: #000000;"></i> <br> 
+                        En nuestro café, no sólo encontrarás bebidas y alimentos deliciosos,
+                        sino que también podrás interactuar con nuestros amiguitos y 
                         aprender más sobre la importancia de la adopción de gatos.
-                        Puedes visualizar nuestro <a href="https://drive.google.com/file/d/1ACg2lAIp8RZj_QJq9nRgMlezC_q8UpEC/view?usp=sharing" download target="_blank">menú actual haciendo click aquí.</a>
+                        Puedes visualizar nuestro <a href="./IMAGENES/Menu Garritas.pdf" download target="_blank">menú actual haciendo click aquí.</a>
                     </p>
                 </div>
             </section>
 
-            <section>
-                <a href="./HTML/adoptame.html" target="blank">
-                    <img id="gato3" class="gato3" src="./IMAGENES/vista-lateral-lindo-gato-sentado-junto-adoptarme-firmar.jpg" alt="Rescatar un Gatito">
-                </a>
+            <section class="section2">
+                <img id="gato3" class="gato3" src="./IMAGENES/vista-lateral-lindo-gato-sentado-junto-adoptarme-firmar.jpg" alt="Rescatar un Gatito">
                 <div class="infoindex">
                     <p> Nos comprometemos a rescatar a gatitos abandonados y proporcionarles los cuidados necesarios para su bienestar. 
                         También trabajamos en estrecha colaboración con organizaciones dedicadas al rescate y cuidado de animales, 
@@ -59,20 +56,24 @@
                 </div>
             </section>
 
-            <div id="banner2" class="banner2">
-                <a href="./HTML/locales.html" target="_blank">
-                    <img id="gato4" class="gato4" src="./IMAGENES/adorable-gatito-blanco-negro-pared-monocromatica-detras-ella.jpg">
-                </a>
-                <div class="info4">
-                    <p> ¡Ven a visitarnos y descubre la alegría de estar rodeado de gatos felices y adorables! Además,
-                        ¡Quién sabe, tal vez encuentres a tu nuevo mejor amigo peludo y le des una nueva oportunidad de vida!
-                        Puedes conocer nuestros locales haciendo click en la foto o en la pestaña "locales".
-                    </p>
+            <section id="section-info4">
+                <div class="flex-container-info4">
+                    <div class="gatoBN">
+                        <a href="./HTML/locales.html" target="_blank"></a>
+                    </div>
+                    <div class="text-container">
+                        <div class="info4">
+                            <p>¡Ven a visitarnos y descubre la alegría de estar rodeado de gatos felices y adorables! Además,
+                                ¡Quién sabe, tal vez encuentres a tu nuevo mejor amigo peludo y le des una nueva oportunidad de vida!
+                                Puedes conocer nuestros locales <a href="./HTML/locales.html"> haciendo click aqui</a> o en la pestaña "locales".</p>
+                        </div>
+                    </div>
                 </div>
-            </div
+            </section>
+            
 
         </div>
-    </div>
+    
 
         <!-- Pie de Pagina -->
 
@@ -115,7 +116,7 @@
             </div>
         </footer>
 
-    <script src="./JS/indexprueba.js"></script>
+    <script src="./JS/main.js"></script>
     </body>
 
 </html>

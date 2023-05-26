@@ -1,18 +1,25 @@
-
 @import url(../CSS/galeria.css);
 @import url(../CSS/nav.css);
 @import url(../CSS/footer.css);
 @import url(../CSS/locales.css);
 
+* {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 body {
-    background-image: url(../IMAGENES/Logoyfondo/Cafe\ garritas\ fondo_Mesa\ de\ trabajo\ 1.svg) ;
+    
+    background-image: url(../IMAGENES/Logoyfondo/Cafe\ garritas\ fondo_Mesa\ de\ trabajo\ 1.svg);
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
     z-index: 0;
 }
 
-section {
+.section1 {
+    overflow: hidden;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -20,16 +27,21 @@ section {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-section .infoindex {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+.section2 {
+    overflow: hidden;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
 }
+
+
 
 .infoindex p {
     font-family: 'Patrick Hand', cursive;
     font-size: 25px;
-    text-align: center;
+    text-align: justify;
 }
 
 div.infoindex p a {
@@ -42,16 +54,6 @@ div.infoindex p a {
     position: relative;
     opacity: 0.9;
     z-index: 1;
-}
-
-.logoinicio {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    height: 200px;
-    top: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 div h1 {
@@ -81,22 +83,33 @@ section img {
     z-index: 1;
 }
 
-div.info4 {
-    font-family: 'Montserrat', sans-serif;
+.flex-container-info4 {
     display: flex;
-    position: absolute;
-    top: 140%;
-    left: 70%;
-    transform: translate(-50%, 50%);
+    align-items: center;
+    justify-content: right;
+    background-image: url("../IMAGENES/adorable-gatito-blanco-negro-pared-monocromatica-detras-ella.jpg");
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+
+.text-container {
+    flex: 0 0 50%;
+    padding: 10px;
+}
+
+.info4 {
+    font-family: 'Montserrat', sans-serif;
     color: #846745;
     font-size: 25px;
     font-weight: 900;
     text-align: center;
-    z-index: 3;
 }
 
-/**ESTILOS PARA EL SCRIPT**/
 .gato2 {
+    
     position: relative;
     left: -50px;
     opacity: 0;
@@ -119,74 +132,82 @@ div.info4 {
     transition: 1s linear;
 }
 
-/* Estilos para pantallas de celulares */
-@media only screen and (max-width: 800px) {
-
-    .gato1 {
-        margin-top: 68px;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .logoinicio {
-        height: 100px;
-    }
-    section .infoindex {
-        width: 300%;
-        max-width: 200px;
-        margin: 0 auto;        
-    }
-    section .infoindex p {
-        font-size: 15px;
-    }
-  
-    div h1 {
-        top: 26%;
-        font-size: 15px;
-    }
-    
-    section img {
-        max-width: 90%;
-    }
-    
-    div.info4 {
-        top: 114%;
-        font-size: 11px;
-    }
+a {
+    text-decoration: none;
+    color: rgb(190, 144, 7);
 }
-@media only screen and (max-width: 600px) {
-    .gato1 {
-        margin-top: 137px;
-        max-width: 100%;
-        height: auto;
-    }
 
-    .logoinicio {
-        margin-top: 68px;
-        height: 80px;
-    }
-    section .infoindex {
-        width: 300%;
-        max-width: 200px;
-        margin: 0 auto;        
-    }
-    section .infoindex p {
-        font-size: 10px;
-    }
-  
-    div h1 {
-        top: 27%;
-        font-size: 10px;
-    }
-    
-    section img {
-        max-width: 90%;
-    }
+.contenedor-padre {
 
-    div.info4 {
-        top: 116%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../IMAGENES/dueno-acariciando-adorable-gato.jpg);
+    background-size: cover;
+    z-index: 10;
+    height: 400px;
+}
+
+.logoBlanco {
+    margin-top: 5em;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    background-image: url(../IMAGENES/Logoyfondo/Cafe\ garritas\ logo\ blanco-06.svg);
+}
+
+.Bienvenidos {
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    color: aliceblue;
+    margin-bottom: auto;
+    font-family: 'Patrick Hand', cursive;
+}
+@media screen and (max-width: 400px) {
+.section1, .section2{
+    flex-direction: column;
+    height: 20vh;
+}
+section img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+    .infoindex p {
         font-size: 8px;
     }
 
-   
+    div h1 {
+        font-size: 18px;
+    }
+
+    .text-container {
+        padding: 2px;
+    }
+
+    .info4 {
+        font-size: 18px;
+    }
+
+    .logoBlanco {
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .Bienvenidos {
+        font-size: 18px;
+    }
+    .flex-container-info4 {
+        flex-direction: column;
+        background-size: cover;
+        border-color: rgb(0, 0, 0);
+        border-style: dotted;
+    }
+    .contenedor-padre{
+        height: 200px;
+    }
 }
