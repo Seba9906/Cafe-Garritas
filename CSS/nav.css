@@ -76,5 +76,6 @@ nav, .barnav .nav-link {
     }
     nav.barnav{
       grid-column: 3/ span 1;
+      margin-right: 80px;
     }
 }
