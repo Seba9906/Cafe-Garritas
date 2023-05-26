@@ -97,6 +97,9 @@ section img {
 .text-container {
     flex: 0 0 50%;
     padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .info4 {
@@ -104,7 +107,7 @@ section img {
     color: #846745;
     font-size: 25px;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
 }
 
 .gato2 {
@@ -166,6 +169,11 @@ a {
     margin-bottom: auto;
     font-family: 'Patrick Hand', cursive;
 }
+
+.gatoBN {
+    flex: 0 0 50%;
+    padding: 10px;
+}
 @media screen and (max-width: 400px) {
     * {
         overflow-x: hidden;
@@ -217,3 +225,4 @@ section img {
         height: 200px;
     }
 }
+
