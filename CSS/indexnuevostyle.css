@@ -167,6 +167,10 @@ a {
     font-family: 'Patrick Hand', cursive;
 }
 @media screen and (max-width: 400px) {
+    * {
+        margin-left: 0;
+        margin-right: 0;
+    }
 .section1, .section2{
     flex-direction: column;
     height: 20vh;
