@@ -84,7 +84,15 @@ h4{
 }
 
 /*hacerlo responsivo*/
+@media screen and (max-width: 400px) {
+    .footer-columna span{
+        font-size: 15px;
+    }
 
+    .main-datos{
+        font-size: 10px;
+    }
+}
 @media  screen and (max-width: 700px){
     .footer-columna{
         width: calc(100% / 1);
@@ -92,7 +100,11 @@ h4{
     }
 
     .footer-columna span{
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .main-datos{
+        font-size: 12px;
     }
       
 }
@@ -100,11 +112,11 @@ h4{
 @media screen and (min-width: 1000px){
     .footer-copy{
         padding: 10px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .main-datos{
-        font-size: 23px;
+        font-size: 18px;
     }
 }
     
