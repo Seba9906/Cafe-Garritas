@@ -54,7 +54,7 @@ nav, .barnav .nav-link {
     justify-content: center;
   }
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     nav {
         grid-template-columns: 1fr auto; /* Vuelve a este valor para tener un espacio para el logo y otro para el menú */
         padding: 0 10px;
