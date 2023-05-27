@@ -81,7 +81,7 @@ nav, .barnav .nav-link {
     }
 }
 
-@media screen and (min-width: 700){
+@media screen and (max-width: 1080){
   nav {
     grid-template-columns: 1fr auto; /* Vuelve a este valor para tener un espacio para el logo y otro para el menú */
     padding: 0 10px;
@@ -93,8 +93,8 @@ nav, .barnav .nav-link {
   }
 
   nav .barnav .nav {
-    grid-template-columns: repeat(3, auto); /* Si quieres que los enlaces del menú se apilen verticalmente, puedes cambiar esto a '1fr' */
-    margin-right: 20px;
+    grid-template-columns: repeat(2, auto); /* Si quieres que los enlaces del menú se apilen verticalmente, puedes cambiar esto a '1fr' */
+    margin-right: 15px;
   }
 
   nav .logo img {

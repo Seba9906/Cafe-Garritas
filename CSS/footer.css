@@ -53,7 +53,7 @@
     width: 100%;
     background: #AC8A5F;
     color: antiquewhite;
-    padding: 5% 0;
+    padding: 2% 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -64,7 +64,7 @@
 }
 
 .footer-columna i{
-    padding: 5px;
+    padding: 2%;
 }
 
 h4{
@@ -85,38 +85,71 @@ h4{
 
 /*hacerlo responsivo*/
 @media screen and (max-width: 400px) {
-    .footer-columna span{
-        font-size: 15px;
+    .main-datos{
+        font-size: 14px;
+        padding: 3% 0;
     }
 
-    .main-datos{
-        font-size: 10px;
+    h4{
+        font-size: 16px;
+        margin-bottom: 13px;
     }
+      
+    .footer-copy{
+        padding: 7px;
+        font-size: 12px;
+    }
+    
 }
 @media  screen and (max-width: 700px){
+
+    .main-redes a{
+        
+        font-size: 25px;
+        border-radius: 50%;
+        padding: 5px;
+        
+    }   
+
+    .main-redes a:hover{
+       
+        font-size: 41px;
+        
+    }
+
     .footer-columna{
-        width: calc(100% / 1);
+        width: 100%;
         text-align: center;
     }
 
-    .footer-columna span{
-        font-size: 15px;
+    .main-datos{
+        font-size: 18px;
+        padding: 5% 0;
     }
 
-    .main-datos{
-        font-size: 12px;
+    .footer-columna i{
+        display: none;
+    }
+
+    h4{
+        font-size: 20px;
+        margin-bottom: 13px;
     }
       
+    .footer-copy{
+        padding: 9px;
+        font-size: 13px;
+    }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 780px){
     .footer-copy{
         padding: 10px;
         font-size: 15px;
     }
 
     .main-datos{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
     
