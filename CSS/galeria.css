@@ -10,7 +10,6 @@
   flex-basis: 30%; /* como son 9 imagenes ocupando el 30% del flex quedan 3 imagenes por linea en ventana de computadora*/
   padding: 10px;
   position: relative;
-  overflow-x: hidden; /* sin esto las imagenes se desbordan y chocan entre si*/ 
   height: 430px;
 }
 
