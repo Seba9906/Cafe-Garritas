@@ -80,3 +80,31 @@ nav, .barnav .nav-link {
         margin-right: 0; /* Reduce o elimina el margen derecho */
     }
 }
+
+@media screen and (min-width: 700){
+  nav {
+    grid-template-columns: 1fr auto; /* Vuelve a este valor para tener un espacio para el logo y otro para el menú */
+    padding: 0 10px;
+  }
+
+  nav .barnav .nav-link {
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+
+  nav .barnav .nav {
+    grid-template-columns: repeat(3, auto); /* Si quieres que los enlaces del menú se apilen verticalmente, puedes cambiar esto a '1fr' */
+    margin-right: 20px;
+  }
+
+  nav .logo img {
+    height: 30px;
+    margin-left: 7px;
+  }
+
+  nav.barnav {
+    grid-column: 2; /* Coloca .barnav en la segunda columna */
+    margin-right: 0; /* Ajusta el tamaño del margen derecho según tus necesidades */
+  }
+  
+}

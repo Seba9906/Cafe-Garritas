@@ -2,6 +2,7 @@
 @import url(../CSS/nav.css);
 @import url(../CSS/footer.css);
 @import url(../CSS/locales.css);
+@import url(../CSS/acariciaungatito.css);
 
 * {
     margin-left: 0;
@@ -181,7 +182,7 @@ a {
 }
 @media screen and (max-width: 480px) {
     * {
-        overflow-x: hidden;
+        overflow: hidden;
         margin-left: 0;
         margin-right: 0;
     }
@@ -231,3 +232,10 @@ section img {
     }
 }
 
+@media screen and (max-width: 1080px) {
+    * {
+        overflow: hidden;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
