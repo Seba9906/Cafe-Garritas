@@ -223,8 +223,6 @@ section img {
     .flex-container-info4 {
         flex-direction: column;
         background-size: cover;
-        border-color: rgb(0, 0, 0);
-        border-style: dotted;
     }
     .contenedor-padre{
         width: 100%;
