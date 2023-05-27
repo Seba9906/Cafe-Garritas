@@ -20,7 +20,7 @@ body {
 }
 
 .section1 {
-    overflow: hidden;
+    overflow-x: hidden;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ body {
 }
 
 .section2 {
-    overflow: hidden;
+    overflow-x: hidden;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -182,7 +182,7 @@ a {
 }
 @media screen and (max-width: 480px) {
     * {
-        overflow: hidden;
+        overflow-x: hidden;
         margin-left: 0;
         margin-right: 0;
     }
@@ -234,7 +234,7 @@ section img {
 
 @media screen and (max-width: 1080px) {
     * {
-        overflow: hidden;
+        overflow-x: hidden;
         margin-left: 0;
         margin-right: 0;
     }
