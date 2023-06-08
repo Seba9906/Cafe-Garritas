@@ -11,6 +11,7 @@
   padding: 10px;
   position: relative;
   height: 430px;
+  overflow: hidden;
 }
 
 .galeria .contenedor-imagen:hover .texto-imagen {
@@ -31,6 +32,7 @@
   opacity: 1;
   transition: 0.5s ease;
   position: relative;
+  overflow: hidden;
 } 
 
 .galeria .texto-imagen {
